@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Press+Start+2P&display=swap');
+
+:root {
+    --rosa-neon: #ff4ecd;
+    --azul-neon: #4e9bff;
+    --amarelo-anime: #ffd633;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ff4ecd;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7fa;
+}
+
+header {
+    background: linear-gradient(90deg, var(--rosa-neon), var(--azul-neon));
+    color: #fff;
+    border-bottom: 4px solid var(--amarelo-anime);
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.inicio-fundo {
+    background-image: url('img/background-anime.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    position: relative;
+}
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35rem;
+    height: auto;
+}
+
+.botao-inicio {
+    background-color: var(--rosa-neon);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.display-4 {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: -5px 5px var(--amarelo-anime);
+}
+
+#anime {
+    background: url('img/sakura.png') top right no-repeat,
+                url('img/sakura2.png') bottom left no-repeat;
+    background-size: 180px 180px;
+    margin: 3rem 0;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+    color: var(--rosa-neon);
+}
+
+#galeria {
+    background-color: #f0f8ff;
+}
+
+.fundo-galeria {
+    background: url('img/katana.png') bottom right no-repeat;
+    background-size: 200px 200px;
+}
+
+#contato {
+    background-image: url('img/background-anime2.png');
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 78, 205, 0.5);
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: var(--azul-neon);
+    border: none;
+    font-weight: bold;
+}
+
+footer {
+    background: linear-gradient(90deg, var(--rosa-neon), var(--azul-neon));
+    color: #fff;
+}
+
+/* Acessibilidade */
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link) !important;
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary {
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
